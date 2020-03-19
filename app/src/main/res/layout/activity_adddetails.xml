@@ -93,6 +93,21 @@
         android:layout_margin="10dp"
         android:background="@color/back2"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Add Image Here :"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/bt_select"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorAccent"
+            android:text="Choose Image"
+            android:textColor="@color/back" />
     <Button
         android:id="@+id/bt_submit"
         android:layout_width="wrap_content"

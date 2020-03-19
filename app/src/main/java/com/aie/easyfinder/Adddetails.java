@@ -25,7 +25,6 @@ public class Adddetails extends AppCompatActivity {
         etMobile = findViewById(R.id.et_number);
         etEmail = findViewById(R.id.et_email);
         etAddress = findViewById(R.id.et_address);
-        etStreet = findViewById(R.id.et_street);
         etCity = findViewById(R.id.et_city);
         btSub = findViewById(R.id.bt_submit);
 
@@ -35,24 +34,6 @@ public class Adddetails extends AppCompatActivity {
 
         //add validation
 
-        awesomeValidation.addValidation(this.R.id.et_name,
-                RegexTemplate.NOT_EMPTY,R.string.invalid_name);
-
-        awesomeValidation.addValidation(this.R.id.et_number,
-                "[5-9]{1}[0-9]{9}$",R.string.invalid_number);
-
-        awesomeValidation.addValidation(this.R.id.et_email,
-                Patterns.EMAIL_ADDRESS,R.string.invalid_email);
-
-        awesomeValidation.addValidation(this.R.id.et_address,
-                RegexTemplate.NOT_EMPTY,R.string.invalid_address);
-
-
-        awesomeValidation.addValidation(this.R.id.et_street,
-                RegexTemplate.NOT_EMPTY,R.string.invalid_street);
-
-        awesomeValidation.addValidation(this.R.id.et_city,
-                RegexTemplate.NOT_EMPTY,R.string.invalid_city);
 
     }
 }
